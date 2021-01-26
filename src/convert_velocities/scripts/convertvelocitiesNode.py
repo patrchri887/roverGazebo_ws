@@ -39,6 +39,7 @@ def main():
     while not rospy.is_shutdown():
 	RW_pub.publish(right_wheel)
         LW_pub.publish(left_wheel)
+	print("Converting keyboard commands to motor commands")
         rate.sleep()
 
 if __name__ == '__main__':

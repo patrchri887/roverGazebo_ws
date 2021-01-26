@@ -106,7 +106,7 @@
     <collision name="f_caster_wheel_hold">
      <origin rpy=" 0 0 0" xyz="0.065 0 -0.025"/>
       <geometry>
-        <cylinder length="0.01" radius="0.0025"/>
+        <cylinder length="0.0075" radius="0.0025"/>
       </geometry>
       <surface>
         <friction>
@@ -122,7 +122,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.065 0 -0.025"/>
       <geometry>
-        <cylinder length="0.01" radius="0.0025"/>
+        <cylinder length="0.0075" radius="0.0025"/>
       </geometry>
       <material name="blue"/>
     </visual>
@@ -130,7 +130,7 @@
     <collision name="r_caster_wheel_hold">
      <origin rpy=" 0 0 0" xyz="-0.065 0 -0.025"/>
       <geometry>
-        <cylinder length="0.01" radius="0.0025"/>
+        <cylinder length="0.0075" radius="0.0025"/>
       </geometry>
       <surface>
         <friction>
@@ -146,11 +146,11 @@
     <visual>
       <origin rpy="0 0 0" xyz="-0.065 0 -0.025"/>
       <geometry>
-        <cylinder length="0.01" radius="0.0025"/>
+        <cylinder length="0.0075" radius="0.0025"/>
       </geometry>
       <material name="blue"/>
     </visual>
-    <!-- caster front --> 
+    <!-- caster front -->
     <collision name="caster_front_collision">
       <origin rpy=" 0 0 0" xyz="0.065 0 -0.0275"/>
       <geometry>
@@ -161,8 +161,8 @@
           <ode>
             <mu>0</mu>
             <mu2>0</mu2>
-            <slip1>1.0</slip1>
-            <slip2>1.0</slip2>
+            <slip1>0.0</slip1>
+            <slip2>0.0</slip2>
           </ode>
         </friction>
       </surface>
@@ -184,8 +184,8 @@
           <ode>
             <mu>0</mu>
             <mu2>0</mu2>
-            <slip1>1.0</slip1>
-            <slip2>1.0</slip2>
+            <slip1>0.0</slip1>
+            <slip2>0.0</slip2>
           </ode>
         </friction>
       </surface>
@@ -196,7 +196,7 @@
         <sphere radius="0.00025"/>
       </geometry>
     </visual>
-  </link>
+  </link> 
   
   <link name="link_right_wheel">
     <inertial>
