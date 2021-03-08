@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/cranfield/roverGazebo_ws/install/lib;/home/cranfield/Desktop/roverGazebo_ws/devel/lib;/home/cranfield/rover_ws/devel/lib;/home/cranfield/project_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/cranfield/roverGazebo_ws/install/lib;/home/cranfield/roverGazebo_ws/devel/lib;/home/cranfield/Desktop/roverGazebo_ws/devel/lib;/home/cranfield/rover_ws/devel/lib;/home/cranfield/project_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
